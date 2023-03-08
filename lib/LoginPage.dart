@@ -2,8 +2,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +17,10 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              FlutterLogo(),
+              FlutterLogo(size: 30,),
+              SizedBox(height: 30,),
               Padding(
-                padding: const EdgeInsets.fromLTRB(50, 40, 50, 5),
+                padding: const EdgeInsets.symmetric(horizontal: 50),
                 child: TextFormField(
                   keyboardType: TextInputType.emailAddress,
                   autofocus: false,
@@ -32,7 +33,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(50, 0, 50, 5),
+                padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 50),
                 child: TextFormField(
                   keyboardType: TextInputType.visiblePassword,
                   autofocus: false,
