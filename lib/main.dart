@@ -1,4 +1,4 @@
-import 'package:assignment1/HomePage().dart';
+import 'package:assignment1/HomePage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
